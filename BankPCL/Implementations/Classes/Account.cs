@@ -18,7 +18,15 @@ namespace BankPCL.Implementations.Classes
 
         public void RequestLoan(double amount)
         {
-            //Bank.Instance
+            if (amount < Bank.Instance.MaxLoan * Owner.Rating / Bank.Instance.MaxRating)
+                Bank.Instance.ReceiveLoanRequest(new LoanRequest() { account = this, amount = amount });
+
+            throw new Exception("Could't Request Loan");
+        }
+
+        public void RecieveLoan(double amount)
+        {
+            Loan += amount;
         }
     }
 }

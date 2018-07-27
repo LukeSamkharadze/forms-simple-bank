@@ -8,6 +8,12 @@ namespace BankPCL.Abstractions.Interfaces
 {
     public interface IBank
     {
-        double Balance { get; set; }
+        double MaxRating { get; set; }
+        double MaxLoan { get; set; }
+
+        Queue<ILoanRequest> LoanQueue { get; set; }
+
+        void ReceiveLoanRequest(ILoanRequest loanRequest);
+        void GiveLoan(IAccount account, double amount)
     }
 }

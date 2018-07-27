@@ -17,6 +17,6 @@ namespace BankPCL.Abstractions.Interfaces
         
         double Rating { get; set; }
 
-        List<IAccount> Accounts { get; set; }
+        List<ILoanRequest> Accounts { get; set; }
     }
 }

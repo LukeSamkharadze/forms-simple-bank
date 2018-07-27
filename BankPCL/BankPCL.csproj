@@ -40,15 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstractions\Abstract Classes\Strategies\Account Strategies\AccountStateStrategy.cs" />
-    <Compile Include="Abstractions\Interfaces\Strategies\Account Strategies\IAccountStateStrategy.cs" />
+    <Compile Include="Abstractions\Interfaces\IAccount.cs" />
+    <Compile Include="Abstractions\Interfaces\IBank.cs" />
+    <Compile Include="Abstractions\Interfaces\ILoanRequest.cs" />
+    <Compile Include="Abstractions\Interfaces\IPerson.cs" />
     <Compile Include="Implementations\Classes\Account.cs" />
+    <Compile Include="Implementations\Classes\Bank.cs" />
+    <Compile Include="Implementations\Classes\LoanRequest.cs" />
+    <Compile Include="Implementations\Classes\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Implementations\Strategies\Account Strategies\AccountBlackStateStrategy.cs" />
-    <Compile Include="Implementations\Strategies\Account Strategies\AccountGreenStateStrategy.cs" />
-    <Compile Include="Implementations\Strategies\Account Strategies\AccountRedStateStrategy.cs" />
-    <Compile Include="Implementations\Strategies\Account Strategies\AccountWhiteStateStrategy.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Abstractions\Abstract Classes\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

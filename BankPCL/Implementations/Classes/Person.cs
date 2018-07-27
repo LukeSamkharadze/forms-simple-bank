@@ -18,6 +18,6 @@ namespace BankPCL.Implementations.Classes
         public double Salary { get; set; }
         public double Rating { get; set; }
 
-        public List<IAccount> Accounts { get; set; }
+        public List<ILoanRequest> Accounts { get; set; }
     }
 }
