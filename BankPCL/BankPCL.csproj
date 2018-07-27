@@ -40,19 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstractions\Abstract Classes\Strategies\Account Strategies\AccountStateStrategy.cs" />
+    <Compile Include="Abstractions\Abstract Classes\Strategies\Person Strategies\AccountStateStrategy.cs" />
     <Compile Include="Abstractions\Interfaces\IAccount.cs" />
     <Compile Include="Abstractions\Interfaces\IBank.cs" />
     <Compile Include="Abstractions\Interfaces\ILoanRequest.cs" />
     <Compile Include="Abstractions\Interfaces\IPerson.cs" />
-    <Compile Include="Abstractions\Interfaces\Strategies\Account Strategies\IAccountStateStrategy.cs" />
+    <Compile Include="Abstractions\Interfaces\Strategies\Account Strategies\IPersonStrategy.cs" />
     <Compile Include="Implementations\Classes\Account.cs" />
     <Compile Include="Implementations\Classes\Bank.cs" />
     <Compile Include="Implementations\Classes\LoanRequest.cs" />
     <Compile Include="Implementations\Classes\Person.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\AccountBronzeStateStrategy.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\AccountSilverStateStrategy.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\AccountDiamondStateStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Account Strategies\PersonBronzeStateStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Account Strategies\PersontSilverStateStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Account Strategies\PersonDiamondStateStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

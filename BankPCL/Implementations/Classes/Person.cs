@@ -1,10 +1,9 @@
 ﻿using System;
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using BankPCL.Abstractions.Interfaces;
+using BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies;
 
 namespace BankPCL.Implementations.Classes
 {
@@ -17,6 +16,8 @@ namespace BankPCL.Implementations.Classes
 
         public double? Salary { get; set; } = null;
         public double? Rating { get; set; } = null;
+
+        public IPersonStrategy PersonStateStrategy { get; set; }
 
         public List<ILoanRequest> Accounts { get; set; } = new List<ILoanRequest>();
     }

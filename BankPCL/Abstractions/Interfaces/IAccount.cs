@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BankPCL.Abstractions.Interfaces
 {
@@ -21,6 +17,6 @@ namespace BankPCL.Abstractions.Interfaces
         void RequestLoan(double amount);
         void RecieveLoan(double amount);
 
-        void PayLoan(double amount)
+        void PayLoan(double amount);
     }
 }

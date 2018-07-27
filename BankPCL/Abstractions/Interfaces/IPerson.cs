@@ -1,8 +1,8 @@
 ﻿using System;
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies;
 
 namespace BankPCL.Abstractions.Interfaces
 {
@@ -15,6 +15,8 @@ namespace BankPCL.Abstractions.Interfaces
 
         double? Salary { get; set; }
         double? Rating { get; set; }
+
+        IPersonStrategy PersonStateStrategy { get; set; }
 
         List<ILoanRequest> Accounts { get; set; }
     }
