@@ -8,9 +8,9 @@ using BankPCL.Abstractions.Interfaces.Strategies.Account_Strategies;
 
 namespace BankPCL.Implementations.Classes.Strategies.Account_Strategies
 {
-    public class AccountBlackStateStrategy : IAccountStateStrategy
+    public class AccountDiamondStateStrategy : IAccountStateStrategy
     {
-        public double? Limit { get; set;}
+        public double? Limit { get; set; }
         public double? Rating { get; set; }
 
         public double WithdrawUsingRating(double amount)

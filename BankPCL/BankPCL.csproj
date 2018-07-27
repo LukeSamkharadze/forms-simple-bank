@@ -50,10 +50,9 @@
     <Compile Include="Implementations\Classes\Bank.cs" />
     <Compile Include="Implementations\Classes\LoanRequest.cs" />
     <Compile Include="Implementations\Classes\Person.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\AccountBlackStateStrategy.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\AccountGreenStateStrategy.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\AccountRedStateStrategy.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\AccountWhiteStateStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Account Strategies\AccountBronzeStateStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Account Strategies\AccountSilverStateStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Account Strategies\AccountDiamondStateStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
