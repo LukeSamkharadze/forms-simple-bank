@@ -9,7 +9,6 @@ namespace BankPCL.Abstractions.Interfaces
     public interface ILoanRequest
     {
         IAccount account { get; set; }
-
         double? amount { get; set; }
     }
 }

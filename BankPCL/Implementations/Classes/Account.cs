@@ -17,6 +17,16 @@ namespace BankPCL.Implementations.Classes
         public double? Balance { get; set; } = null;
         public double? Loan { get; set; } = null;
 
+        public void SendMoney(IAccount receiver, double amount)
+        {
+            Balance -= amount;
+            receiver.ReceiveMoney(this, amount);
+        }
+        public void ReceiveMoney(IAccount sender, double amount)
+        {
+            Balance += amount;
+        }
+
         public void RequestLoan(double amount)
         {
             if (amount < Bank.Instance.MaxLoan * Owner.Rating / Bank.Instance.MaxRating)
@@ -24,10 +34,14 @@ namespace BankPCL.Implementations.Classes
 
             throw new Exception("Could't Request Loan");
         }
-
         public void RecieveLoan(double amount)
         {
             Loan += amount;
+        }
+
+        public void PayLoan(double amount)
+        {
+            Loan -= amount;
         }
     }
 }

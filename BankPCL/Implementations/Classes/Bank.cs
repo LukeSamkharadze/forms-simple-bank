@@ -19,6 +19,7 @@ namespace BankPCL.Implementations.Classes
         public double? MaxRating { get; set; } = null;
         public double? MaxLoan { get; set; } = null;
 
+        public List<IAccount> Accounts { get; set; } = new List<IAccount>();
         public Queue<ILoanRequest> LoanQueue { get; set; } = new Queue<ILoanRequest>();
 
         private Bank() { }

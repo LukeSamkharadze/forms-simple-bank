@@ -10,7 +10,7 @@ namespace BankPCL.Implementations.Classes
 {
     public class LoanRequest : ILoanRequest
     {
-        public IAccount account {get;set;}
-        public double? amount {get;set;}
+        public IAccount account { get; set; } = null;
+        public double? amount { get; set; } = null;
     }
 }

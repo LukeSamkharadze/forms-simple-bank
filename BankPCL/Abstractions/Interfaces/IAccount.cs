@@ -15,7 +15,12 @@ namespace BankPCL.Abstractions.Interfaces
         double? Balance { get; set; }
         double? Loan { get; set; }
 
+        void SendMoney(IAccount receiver, double amount);
+        void ReceiveMoney(IAccount sender, double amount);
+
         void RequestLoan(double amount);
         void RecieveLoan(double amount);
+
+        void PayLoan(double amount)
     }
 }
