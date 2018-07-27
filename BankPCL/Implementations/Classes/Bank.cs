@@ -16,8 +16,8 @@ namespace BankPCL.Implementations.Classes
         /////////////////////////////////////////////////////////
         public static Bank Instance { get; set; } = new Bank();
 
-        public double MaxRating { get; set; }
-        public double MaxLoan { get; set; }
+        public double? MaxRating { get; set; } = null;
+        public double? MaxLoan { get; set; } = null;
 
         public Queue<ILoanRequest> LoanQueue { get; set; } = new Queue<ILoanRequest>();
 

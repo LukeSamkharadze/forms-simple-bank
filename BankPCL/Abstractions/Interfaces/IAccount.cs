@@ -12,8 +12,8 @@ namespace BankPCL.Abstractions.Interfaces
 
         string ID { get; set; }
         
-        double Balance { get; set; }
-        double Loan { get; set; }
+        double? Balance { get; set; }
+        double? Loan { get; set; }
 
         void RequestLoan(double amount);
         void RecieveLoan(double amount);

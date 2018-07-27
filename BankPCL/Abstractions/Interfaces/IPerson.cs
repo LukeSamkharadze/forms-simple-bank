@@ -13,9 +13,8 @@ namespace BankPCL.Abstractions.Interfaces
         string FirstName { get; set; }
         string LastName { get; set; }
 
-        double Salary { get; set; }
-        
-        double Rating { get; set; }
+        double? Salary { get; set; }
+        double? Rating { get; set; }
 
         List<ILoanRequest> Accounts { get; set; }
     }

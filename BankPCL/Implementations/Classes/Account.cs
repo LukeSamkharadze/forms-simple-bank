@@ -10,11 +10,12 @@ namespace BankPCL.Implementations.Classes
 {
     public class Account : IAccount
     {
-        public IPerson Owner { get; set; }
+        public IPerson Owner { get; set; } = null;
 
         public string ID { get; set; }
-        public double Balance { get; set; }
-        public double Loan { get; set; }
+        
+        public double? Balance { get; set; } = null;
+        public double? Loan { get; set; } = null;
 
         public void RequestLoan(double amount)
         {
