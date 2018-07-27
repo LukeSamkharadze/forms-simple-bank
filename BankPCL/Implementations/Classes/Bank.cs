@@ -8,17 +8,12 @@ using BankPCL.Abstractions.Interfaces;
 
 namespace BankPCL.Implementations.Classes
 {
-    public class Account : IAccount
+    public class Bank : IBank
     {
-        public IPerson Owner { get; set; }
+        public static Bank Instance { get; set; } = new Bank();
 
-        public string ID { get; set; }
         public double Balance { get; set; }
-        public double Loan { get; set; }
 
-        public void RequestLoan(double amount)
-        {
-            //Bank.Instance
-        }
+        private Bank() { }
     }
 }
