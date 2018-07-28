@@ -24,7 +24,6 @@ namespace BankPCL.Implementations.Classes
             Balance += amount;
         }
 
-
         public void PayLoan(double amount)
         {
             Loan -= amount;
