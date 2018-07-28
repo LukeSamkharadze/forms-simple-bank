@@ -16,7 +16,7 @@ namespace BankPCL.Abstractions.Interfaces
         double? Salary { get; set; }
         double? Rating { get; set; }
 
-        IPersonStrategy PersonStateStrategy { get; set; }
+        IPersonStateStrategy PersonStateStrategy { get; set; }
 
         List<ILoanRequest> Accounts { get; set; }
     }
