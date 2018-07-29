@@ -4,7 +4,7 @@ using BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies;
 
 namespace BankPCL.Implementations.Classes.Strategies.Account_Strategies
 {
-    public class DiamondMembershipStrategy : IPersonMembershipStrategy
+    public class DiamondMembershipStrategy : IMembershipStrategy
     {
         public double? Priority { get; set; }
 

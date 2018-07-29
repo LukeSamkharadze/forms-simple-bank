@@ -17,7 +17,7 @@ namespace BankPCL.Implementations.Classes
         public double? Salary { get; set; } = null;
         public double? Rating { get; set; } = null;
 
-        public IPersonStateStrategy PersonStateStrategy { get; set; }
+        public IMembershipStrategy MembershipStrategy { get; set; }
 
         public List<ILoanRequest> Accounts { get; set; } = new List<ILoanRequest>();
     }
