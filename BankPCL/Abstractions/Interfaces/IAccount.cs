@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BankPCL.Abstractions.Interfaces
 {
@@ -11,11 +12,13 @@ namespace BankPCL.Abstractions.Interfaces
         double? Balance { get; set; }
         double? Loan { get; set; }
 
-        void SendMoney(IAccount receiver, double amount);
-        void ReceiveMoney(IAccount sender, double amount);
+        Dictionary<string,EventHandler> events { get;set; }
+
+        void SendMoney(double amount, string accountID);
+        void ReceiveMoney(double amount, IAccount sender);
 
         void RequestLoan(double amount);
-        void RecieveLoan(double amount);
+        void RecieveLoan(double amount, double interest);
 
         void PayLoan(double amount);
     }

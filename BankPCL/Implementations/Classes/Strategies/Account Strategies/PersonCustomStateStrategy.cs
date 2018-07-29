@@ -6,6 +6,6 @@ namespace BankPCL.Implementations.Classes.Strategies.Account_Strategies
 {
     public class PersonCustomStateStrategy : PersonStateStrategy
     {
-        public override double? Interest { get; set; }
+
     }
 }

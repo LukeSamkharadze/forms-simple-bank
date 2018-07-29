@@ -52,8 +52,8 @@
     <Compile Include="Implementations\Classes\Person.cs" />
     <Compile Include="Implementations\Classes\Strategies\Account Strategies\PersonBronzeStateStrategy.cs" />
     <Compile Include="Implementations\Classes\Strategies\Account Strategies\PersonCustomStateStrategy.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\PersontSilverStateStrategy.cs" />
     <Compile Include="Implementations\Classes\Strategies\Account Strategies\PersonDiamondStateStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Account Strategies\PersontSilverStateStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
