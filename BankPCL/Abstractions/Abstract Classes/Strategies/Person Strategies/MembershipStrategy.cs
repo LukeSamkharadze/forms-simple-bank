@@ -4,7 +4,7 @@ using BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies;
 
 namespace BankPCL.Abstractions.Abstract_Classes.Strategies.Person_Strategies
 {
-    public abstract class PersonStateStrategy : IPersonStateStrategy
+    public abstract class MembershipStrategy : IPersonMembershipStrategy
     {
         public virtual double? Priority { get; set; }
 

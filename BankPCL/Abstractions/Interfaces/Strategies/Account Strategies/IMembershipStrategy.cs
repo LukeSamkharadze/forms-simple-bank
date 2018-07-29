@@ -2,7 +2,7 @@
 
 namespace BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies
 {
-    public interface IPersonStateStrategy
+    public interface IPersonMembershipStrategy
     {
         double? Priority { get; set; }
 
