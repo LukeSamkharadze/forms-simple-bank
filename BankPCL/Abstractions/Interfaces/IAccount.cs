@@ -12,8 +12,6 @@ namespace BankPCL.Abstractions.Interfaces
         double? Balance { get; set; }
         double? Loan { get; set; }
 
-        Dictionary<string,EventHandler> events { get;set; }
-
         void SendMoney(double amount, string accountID);
         void ReceiveMoney(double amount, IAccount sender);
 

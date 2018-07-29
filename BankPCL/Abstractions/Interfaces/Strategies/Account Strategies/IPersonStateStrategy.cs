@@ -4,6 +4,8 @@ namespace BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies
 {
     public interface IPersonStateStrategy
     {
+        double? Priority { get; set; }
+
         double? Interest { get; set; }
 
         double? UpperLimit { get; set; }

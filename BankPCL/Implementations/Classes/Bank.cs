@@ -21,8 +21,6 @@ namespace BankPCL.Implementations.Classes
         public void ReceiveLoanRequest(ILoanRequest loanRequest)
         {
             LoanQueue.Enqueue(loanRequest);
-
-            throw new Exception("Received Loan Request Was't Accepted");
         }
 
         public void GiveLoan(IAccount account, double amount)
