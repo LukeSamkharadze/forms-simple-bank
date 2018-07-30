@@ -36,8 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -47,21 +45,46 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button16 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -70,7 +93,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -123,7 +150,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label2.Location = new System.Drawing.Point(1202, 431);
+            this.label2.Location = new System.Drawing.Point(1181, 393);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 25);
             this.label2.TabIndex = 5;
@@ -138,26 +165,6 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Withdraw";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label3.Location = new System.Drawing.Point(928, 395);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 25);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Money";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label4.Location = new System.Drawing.Point(892, 359);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 25);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Account ID";
             // 
             // numericUpDown3
             // 
@@ -199,7 +206,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label5.Location = new System.Drawing.Point(1176, 395);
+            this.label5.Location = new System.Drawing.Point(1166, 430);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 25);
             this.label5.TabIndex = 14;
@@ -226,9 +233,9 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.button3.Location = new System.Drawing.Point(380, 76);
+            this.button3.Location = new System.Drawing.Point(487, 76);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 30);
+            this.button3.Size = new System.Drawing.Size(150, 30);
             this.button3.TabIndex = 16;
             this.button3.Text = "Give Loan";
             this.button3.UseVisualStyleBackColor = true;
@@ -242,16 +249,6 @@
             this.label7.Size = new System.Drawing.Size(108, 25);
             this.label7.TabIndex = 17;
             this.label7.Text = "Account ID";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.richTextBox1.Location = new System.Drawing.Point(19, 76);
-            this.richTextBox1.Multiline = false;
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(229, 30);
-            this.richTextBox1.TabIndex = 18;
-            this.richTextBox1.Text = "";
             // 
             // label8
             // 
@@ -277,16 +274,16 @@
             // 
             this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(12, 620);
+            this.checkedListBox1.Location = new System.Drawing.Point(11, 670);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(450, 229);
+            this.checkedListBox1.Size = new System.Drawing.Size(450, 179);
             this.checkedListBox1.TabIndex = 21;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label10.Location = new System.Drawing.Point(12, 578);
+            this.label10.Location = new System.Drawing.Point(11, 628);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(246, 39);
             this.label10.TabIndex = 22;
@@ -296,7 +293,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label11.Location = new System.Drawing.Point(468, 578);
+            this.label11.Location = new System.Drawing.Point(467, 628);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(208, 39);
             this.label11.TabIndex = 24;
@@ -306,26 +303,16 @@
             // 
             this.checkedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Location = new System.Drawing.Point(468, 620);
+            this.checkedListBox2.Location = new System.Drawing.Point(467, 670);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(450, 229);
+            this.checkedListBox2.Size = new System.Drawing.Size(450, 179);
             this.checkedListBox2.TabIndex = 23;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button5.Location = new System.Drawing.Point(264, 578);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(198, 36);
-            this.button5.TabIndex = 25;
-            this.button5.Text = "Give Loan";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label12.Location = new System.Drawing.Point(926, 578);
+            this.label12.Location = new System.Drawing.Point(925, 628);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(310, 39);
             this.label12.TabIndex = 28;
@@ -335,36 +322,26 @@
             // 
             this.checkedListBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Location = new System.Drawing.Point(924, 620);
+            this.checkedListBox3.Location = new System.Drawing.Point(923, 670);
             this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(450, 229);
+            this.checkedListBox3.Size = new System.Drawing.Size(450, 179);
             this.checkedListBox3.TabIndex = 27;
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.richTextBox2.Location = new System.Drawing.Point(19, 112);
-            this.richTextBox2.Multiline = false;
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(229, 30);
-            this.richTextBox2.TabIndex = 29;
-            this.richTextBox2.Text = "";
             // 
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.button6.Location = new System.Drawing.Point(380, 112);
+            this.button6.Location = new System.Drawing.Point(331, 76);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(110, 30);
+            this.button6.Size = new System.Drawing.Size(150, 30);
             this.button6.TabIndex = 30;
-            this.button6.Text = "Deposit Money";
+            this.button6.Text = "Deposit";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label13.Location = new System.Drawing.Point(249, 48);
+            this.label13.Location = new System.Drawing.Point(178, 48);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(80, 25);
             this.label13.TabIndex = 31;
@@ -373,46 +350,337 @@
             // numericUpDown6
             // 
             this.numericUpDown6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.numericUpDown6.Location = new System.Drawing.Point(254, 76);
+            this.numericUpDown6.Location = new System.Drawing.Point(175, 76);
             this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(120, 30);
+            this.numericUpDown6.Size = new System.Drawing.Size(150, 30);
             this.numericUpDown6.TabIndex = 32;
+            // 
+            // numericUpDown8
+            // 
+            this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.numericUpDown8.Location = new System.Drawing.Point(19, 76);
+            this.numericUpDown8.Name = "numericUpDown8";
+            this.numericUpDown8.Size = new System.Drawing.Size(150, 30);
+            this.numericUpDown8.TabIndex = 34;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label14.Location = new System.Drawing.Point(11, 404);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(142, 39);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "Persons";
+            // 
+            // checkedListBox4
+            // 
+            this.checkedListBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.checkedListBox4.FormattingEnabled = true;
+            this.checkedListBox4.Location = new System.Drawing.Point(11, 446);
+            this.checkedListBox4.Name = "checkedListBox4";
+            this.checkedListBox4.Size = new System.Drawing.Size(450, 179);
+            this.checkedListBox4.TabIndex = 35;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label15.Location = new System.Drawing.Point(467, 404);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(157, 39);
+            this.label15.TabIndex = 38;
+            this.label15.Text = "Accounts";
+            // 
+            // checkedListBox5
+            // 
+            this.checkedListBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.checkedListBox5.FormattingEnabled = true;
+            this.checkedListBox5.Location = new System.Drawing.Point(467, 446);
+            this.checkedListBox5.Name = "checkedListBox5";
+            this.checkedListBox5.Size = new System.Drawing.Size(450, 179);
+            this.checkedListBox5.TabIndex = 37;
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button9.Location = new System.Drawing.Point(767, 637);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(150, 30);
+            this.button9.TabIndex = 42;
+            this.button9.Text = "Remove";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button7.Location = new System.Drawing.Point(767, 410);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(150, 30);
+            this.button7.TabIndex = 43;
+            this.button7.Text = "Give Loan";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button5.Location = new System.Drawing.Point(311, 638);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(150, 30);
+            this.button5.TabIndex = 44;
+            this.button5.Text = "Give Loan";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button8.Location = new System.Drawing.Point(630, 410);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(131, 30);
+            this.button8.TabIndex = 45;
+            this.button8.Text = "Deposit";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button10.Location = new System.Drawing.Point(1241, 634);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(132, 30);
+            this.button10.TabIndex = 46;
+            this.button10.Text = "Remove";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button11.Location = new System.Drawing.Point(330, 410);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(131, 30);
+            this.button11.TabIndex = 47;
+            this.button11.Text = "Block";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button12.Location = new System.Drawing.Point(330, 189);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(131, 30);
+            this.button12.TabIndex = 50;
+            this.button12.Text = "Unblock";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label3.Location = new System.Drawing.Point(11, 183);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(273, 39);
+            this.label3.TabIndex = 49;
+            this.label3.Text = "Blocked Persons";
+            // 
+            // checkedListBox6
+            // 
+            this.checkedListBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.checkedListBox6.FormattingEnabled = true;
+            this.checkedListBox6.Location = new System.Drawing.Point(11, 225);
+            this.checkedListBox6.Name = "checkedListBox6";
+            this.checkedListBox6.Size = new System.Drawing.Size(450, 179);
+            this.checkedListBox6.TabIndex = 48;
+            // 
+            // button13
+            // 
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button13.Location = new System.Drawing.Point(643, 76);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(131, 30);
+            this.button13.TabIndex = 51;
+            this.button13.Text = "Block";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button14.Location = new System.Drawing.Point(780, 77);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(131, 30);
+            this.button14.TabIndex = 52;
+            this.button14.Text = "Unblock";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button15.Location = new System.Drawing.Point(786, 189);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(131, 30);
+            this.button15.TabIndex = 55;
+            this.button15.Text = "Remove";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label4.Location = new System.Drawing.Point(467, 183);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(221, 39);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "Memberships";
+            // 
+            // checkedListBox7
+            // 
+            this.checkedListBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.checkedListBox7.FormattingEnabled = true;
+            this.checkedListBox7.Location = new System.Drawing.Point(467, 225);
+            this.checkedListBox7.Name = "checkedListBox7";
+            this.checkedListBox7.Size = new System.Drawing.Size(450, 179);
+            this.checkedListBox7.TabIndex = 53;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label16.Location = new System.Drawing.Point(14, 132);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(190, 25);
+            this.label16.TabIndex = 56;
+            this.label16.Text = "Membership Creator";
             // 
             // numericUpDown7
             // 
             this.numericUpDown7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.numericUpDown7.Location = new System.Drawing.Point(254, 112);
+            this.numericUpDown7.Location = new System.Drawing.Point(210, 132);
             this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(120, 30);
-            this.numericUpDown7.TabIndex = 33;
+            this.numericUpDown7.Size = new System.Drawing.Size(150, 30);
+            this.numericUpDown7.TabIndex = 57;
+            // 
+            // numericUpDown9
+            // 
+            this.numericUpDown9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.numericUpDown9.Location = new System.Drawing.Point(366, 132);
+            this.numericUpDown9.Name = "numericUpDown9";
+            this.numericUpDown9.Size = new System.Drawing.Size(150, 30);
+            this.numericUpDown9.TabIndex = 58;
+            // 
+            // numericUpDown10
+            // 
+            this.numericUpDown10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.numericUpDown10.Location = new System.Drawing.Point(525, 132);
+            this.numericUpDown10.Name = "numericUpDown10";
+            this.numericUpDown10.Size = new System.Drawing.Size(150, 30);
+            this.numericUpDown10.TabIndex = 59;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
+            this.label17.Location = new System.Drawing.Point(362, 109);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(65, 20);
+            this.label17.TabIndex = 60;
+            this.label17.Text = "Interest";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
+            this.label18.Location = new System.Drawing.Point(528, 109);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(96, 20);
+            this.label18.TabIndex = 61;
+            this.label18.Text = "Upper Limit";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
+            this.label19.Location = new System.Drawing.Point(677, 109);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(97, 20);
+            this.label19.TabIndex = 62;
+            this.label19.Text = "Lower Limit";
+            // 
+            // numericUpDown11
+            // 
+            this.numericUpDown11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.numericUpDown11.Location = new System.Drawing.Point(681, 132);
+            this.numericUpDown11.Name = "numericUpDown11";
+            this.numericUpDown11.Size = new System.Drawing.Size(150, 30);
+            this.numericUpDown11.TabIndex = 63;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
+            this.label20.Location = new System.Drawing.Point(206, 109);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(62, 20);
+            this.label20.TabIndex = 64;
+            this.label20.Text = "Priority";
+            // 
+            // button16
+            // 
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.button16.Location = new System.Drawing.Point(837, 133);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(131, 30);
+            this.button16.TabIndex = 65;
+            this.button16.Text = "Create";
+            this.button16.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1442, 861);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.numericUpDown11);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.numericUpDown10);
+            this.Controls.Add(this.numericUpDown9);
             this.Controls.Add(this.numericUpDown7);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.checkedListBox7);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.checkedListBox6);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.checkedListBox5);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.checkedListBox4);
+            this.Controls.Add(this.numericUpDown8);
             this.Controls.Add(this.numericUpDown6);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.checkedListBox3);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.numericUpDown5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.numericUpDown3);
             this.Controls.Add(this.numericUpDown4);
             this.Controls.Add(this.pictureBox2);
@@ -426,6 +694,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
@@ -434,7 +703,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,8 +722,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -460,21 +731,46 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.CheckedListBox checkedListBox3;
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.CheckedListBox checkedListBox4;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.CheckedListBox checkedListBox5;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckedListBox checkedListBox6;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckedListBox checkedListBox7;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown numericUpDown9;
+        private System.Windows.Forms.NumericUpDown numericUpDown10;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.NumericUpDown numericUpDown11;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button button16;
     }
 }
 
