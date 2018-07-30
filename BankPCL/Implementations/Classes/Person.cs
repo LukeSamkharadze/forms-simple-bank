@@ -14,6 +14,8 @@ namespace BankPCL.Implementations.Classes
         public string FirstName { get; set; } = null;
         public string LastName { get; set; } = null;
 
+        public string Password { get; set; } = null;
+
         public double? Salary { get; set; } = null;
         public double? Rating { get; set; } = null;
 

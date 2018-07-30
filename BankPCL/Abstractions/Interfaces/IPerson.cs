@@ -13,6 +13,8 @@ namespace BankPCL.Abstractions.Interfaces
         string FirstName { get; set; }
         string LastName { get; set; }
 
+        string Password { get; set; }
+
         double? Salary { get; set; }
         double? Rating { get; set; }
 

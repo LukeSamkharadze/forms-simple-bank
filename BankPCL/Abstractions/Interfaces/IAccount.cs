@@ -11,7 +11,7 @@ namespace BankPCL.Abstractions.Interfaces
         
         double? Balance { get; set; }
         double? Loan { get; set; }
-
+        
         void SendMoney(double amount, string accountID);
         void ReceiveMoney(double amount, IAccount sender);
 
