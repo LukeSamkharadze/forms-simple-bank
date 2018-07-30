@@ -21,6 +21,6 @@ namespace BankPCL.Implementations.Classes
 
         public IMembershipStrategy MembershipStrategy { get; set; }
 
-        public List<ILoanRequest> Accounts { get; set; } = new List<ILoanRequest>();
+        public List<IAccount> Accounts { get; set; } = new List<IAccount>();
     }
 }

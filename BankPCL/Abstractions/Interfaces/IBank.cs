@@ -13,10 +13,10 @@ namespace BankPCL.Abstractions.Interfaces
 
         IAccount FindAccount(string accountID);
 
-        void ReceiveSendMoneyRequest(IAccount sender, double amount, string receiverAccountID);
-        void SendMoney(IPerson sender, IAccount receiver);
+        void ReceiveSendMoneyRequest(double amount, IAccount senderAccount, string receiverAccountID)
+        void SendMoney(double amount, IAccount sender, IAccount receiver);
 
-        void ReceiveLoanRequest(ILoanRequest loanRequest);
+        void ReceiveLoanRequest(double amount, IAccount account);
         void GiveLoan(double amount, IAccount account);
     }
 }

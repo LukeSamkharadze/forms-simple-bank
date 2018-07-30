@@ -16,7 +16,7 @@ namespace BankPCL.Abstractions.Interfaces
         event EventHandler ReceiveLoanListeners;
 
         void RequestSendMoney(double amount, string accountID);
-        void ReceiveMoney(double amount, IAccount sender);
+        void ReceiveMoney(double amount, IPerson sender);
 
         void RequestLoan(double amount);
         void ReceiveLoan(double amount, double interest);

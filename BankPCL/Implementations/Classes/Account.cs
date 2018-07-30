@@ -18,20 +18,22 @@ namespace BankPCL.Implementations.Classes
 
         public void RequestSendMoney(double amount, string accountID)
         {
-            Bank.Instance.ReceiveSendMoneyRequest(amount, this, accountID);
+            if (Balance >= amount)
+                Bank.Instance.ReceiveSendMoneyRequest(amount, this, accountID);
         }
-        public void ReceiveMoney(double amount,IAccount sender)
+        public void ReceiveMoney(double amount,IPerson sender)
         {
             Balance += amount;
         }
 
         public void RequestLoan(double amount)
         {
-            throw new Exception();
+            Bank.Instance.ReceiveLoanRequest(amount, this);
         }
         public void ReceiveLoan(double amount, double interest)
         {
-            throw new NotImplementedException();
+            Balance += amount;
+            Loan += amount + interest;
         }
 
         public void PayLoan(double amount)

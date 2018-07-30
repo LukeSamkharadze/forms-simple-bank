@@ -19,7 +19,7 @@ namespace BankPCL.Implementations.Classes
 
         private Bank() { }
 
-        public void ReceiveSendMoneyRequest(double amount,IAccount sender, string receiverAccountID)
+        public void ReceiveSendMoneyRequest(double amount, IAccount senderAccount, string receiverAccountID)
         {
             IAccount receiver = Persons
                 .FirstOrDefault(o => o.Accounts.First().ID == receiverAccountID)
@@ -28,11 +28,13 @@ namespace BankPCL.Implementations.Classes
             if (receiver == null)
                 throw new Exception("Could't Find AccountID");
 
-            SendMoney(amount, sender, receiver);
+            SendMoney(amount, senderAccount, receiver);
         }
-        public void SendMoney(double amount,IAccount sender, IAccount receiver)
+        public void SendMoney(double amount,IAccount senderAccount, IAccount receiver)
         {
-
+            IPerson senderPerson = Persons.FirstOrDefault(o => o.Accounts.Contains(senderAccount));
+            senderAccount.Balance -= amount;
+            receiver.ReceiveMoney(amount, senderPerson);
         }
 
         public IAccount FindAccount(string accountID)
@@ -40,9 +42,9 @@ namespace BankPCL.Implementations.Classes
             return Persons.FirstOrDefault(o => o.Accounts.First().ID == accountID)?.Accounts.First(o => o.ID == accountID);
         }
 
-        public void ReceiveLoanRequest(ILoanRequest loanRequest)
+        public void ReceiveLoanRequest(double amount, IAccount account)
         {
-            LoanQueue.Enqueue(loanRequest);
+            LoanQueue.Enqueue(new LoanRequest() { Account = account, Amount = amount });
         }
         public void GiveLoan(double amount,IAccount account)
         {
