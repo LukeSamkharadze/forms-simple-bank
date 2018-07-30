@@ -20,6 +20,6 @@ namespace BankPCL.Abstractions.Interfaces
 
         IMembershipStrategy MembershipStrategy { get; set; }
 
-        List<ILoanRequest> Accounts { get; set; }
+        List<IAccount> Accounts { get; set; }
     }
 }

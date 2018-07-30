@@ -1,6 +1,7 @@
 ﻿using System;
 
 using System.Collections.Generic;
+using System.Linq;
 
 using BankPCL.Abstractions.Interfaces;
 
@@ -18,14 +19,18 @@ namespace BankPCL.Implementations.Classes
 
         private Bank() { }
 
+        public IAccount FindAccount(string accountID)
+        {
+            return Persons.FirstOrDefault(o => o.Accounts.First().ID == accountID)?.Accounts.First(o => o.ID == accountID);
+        }
+
         public void ReceiveLoanRequest(ILoanRequest loanRequest)
         {
             LoanQueue.Enqueue(loanRequest);
         }
-
-        public void GiveLoan(IAccount account, double amount)
+        public void GiveLoan(double amount,IAccount account)
         {
-            account.RecieveLoan(amount);
+            account.ReceiveLoan(amount, amount * (double)account.Owner.MembershipStrategy.Interest / 100);
         }
     }
 }

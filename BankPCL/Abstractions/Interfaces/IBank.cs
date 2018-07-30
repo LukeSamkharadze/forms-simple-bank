@@ -11,7 +11,9 @@ namespace BankPCL.Abstractions.Interfaces
         List<IPerson> Persons { get; set; }
         Queue<ILoanRequest> LoanQueue { get; set; }
 
+        IAccount FindAccount(string accountID);
+
         void ReceiveLoanRequest(ILoanRequest loanRequest);
-        void GiveLoan(IAccount account, double amount);
+        void GiveLoan(double amount, IAccount account);
     }
 }

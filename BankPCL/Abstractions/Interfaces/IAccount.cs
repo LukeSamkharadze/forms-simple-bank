@@ -11,12 +11,15 @@ namespace BankPCL.Abstractions.Interfaces
         
         double? Balance { get; set; }
         double? Loan { get; set; }
-        
+
+        event EventHandler ReceiveMoneyListeners;
+        event EventHandler ReceiveLoanListeners;
+
         void SendMoney(double amount, string accountID);
         void ReceiveMoney(double amount, IAccount sender);
 
         void RequestLoan(double amount);
-        void RecieveLoan(double amount, double interest);
+        void ReceiveLoan(double amount, double interest);
 
         void PayLoan(double amount);
     }

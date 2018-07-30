@@ -14,29 +14,31 @@ namespace BankPCL.Implementations.Classes
         public double? Loan { get; set; } = null;
 
 
-        public void SendMoney(IAccount receiver, double amount)
+        public void SendMoney(double amount,double accountID)
         {
-            Balance -= amount;
-            receiver.ReceiveMoney(this, amount);
+            if (Bank.Instance.FindAccount(accountID))
+            {
+                Balance -= amount;
+                receiver.ReceiveMoney(amount, this);
+            }
         }
-        public void ReceiveMoney(IAccount sender, double amount)
+        public void ReceiveMoney(double amount,IAccount sender)
         {
             Balance += amount;
-        }
-
-        public void PayLoan(double amount)
-        {
-            Loan -= amount;
         }
 
         public void RequestLoan(double amount)
         {
             throw new Exception();
         }
-
         public void RecieveLoan(double amount)
         {
             throw new NotImplementedException();
+        }
+
+        public void PayLoan(double amount)
+        {
+            Loan -= amount;
         }
     }
 }
