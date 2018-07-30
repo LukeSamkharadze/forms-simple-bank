@@ -13,14 +13,12 @@ namespace BankPCL.Implementations.Classes
         public double? Balance { get; set; } = null;
         public double? Loan { get; set; } = null;
 
+        public event EventHandler ReceiveMoneyListeners;
+        public event EventHandler ReceiveLoanListeners;
 
-        public void SendMoney(double amount,double accountID)
+        public void RequestSendMoney(double amount, string accountID)
         {
-            if (Bank.Instance.FindAccount(accountID))
-            {
-                Balance -= amount;
-                receiver.ReceiveMoney(amount, this);
-            }
+            Bank.Instance.ReceiveSendMoneyRequest(amount, this, accountID);
         }
         public void ReceiveMoney(double amount,IAccount sender)
         {
@@ -31,7 +29,7 @@ namespace BankPCL.Implementations.Classes
         {
             throw new Exception();
         }
-        public void RecieveLoan(double amount)
+        public void ReceiveLoan(double amount, double interest)
         {
             throw new NotImplementedException();
         }

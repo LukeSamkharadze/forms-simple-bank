@@ -19,6 +19,22 @@ namespace BankPCL.Implementations.Classes
 
         private Bank() { }
 
+        public void ReceiveSendMoneyRequest(double amount,IAccount sender, string receiverAccountID)
+        {
+            IAccount receiver = Persons
+                .FirstOrDefault(o => o.Accounts.First().ID == receiverAccountID)
+                ?.Accounts.First(o => o.ID == receiverAccountID);
+
+            if (receiver == null)
+                throw new Exception("Could't Find AccountID");
+
+            SendMoney(amount, sender, receiver);
+        }
+        public void SendMoney(double amount,IAccount sender, IAccount receiver)
+        {
+
+        }
+
         public IAccount FindAccount(string accountID)
         {
             return Persons.FirstOrDefault(o => o.Accounts.First().ID == accountID)?.Accounts.First(o => o.ID == accountID);
