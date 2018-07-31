@@ -10,6 +10,8 @@ namespace BankPCL.Abstractions.Interfaces
     {
         string ID { get; set; }
 
+        bool IsBlocked { get; set; }
+
         string FirstName { get; set; }
         string LastName { get; set; }
 

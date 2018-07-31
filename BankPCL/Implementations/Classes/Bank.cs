@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using BankPCL.Abstractions.Interfaces;
+using BankPCL.Implementations.Services;
 
 namespace BankPCL.Implementations.Classes
 {
@@ -19,27 +20,45 @@ namespace BankPCL.Implementations.Classes
 
         private Bank() { }
 
+        public void BlockPerson(string personID)
+        {
+            IPerson person = BankServices.FindAccount(personID);
+
+            if (person == null)
+                throw new Exception("Could't Find Person");
+
+            BlockPerson(person);
+        }
+        public void BlockPerson(IPerson person)
+        {
+            person.IsBlocked = true;
+        }
+
+        public void BlockAccount(string accountID)
+        {
+            IAccount account = BankServices.FindAccount(accountID);
+
+            if()
+        }
+        public void BlockAccount(IAccount account)
+        {
+            account.IsBlocked = true;
+        }
+
         public void ReceiveSendMoneyRequest(double amount, IAccount senderAccount, string receiverAccountID)
         {
-            IAccount receiver = Persons
-                .FirstOrDefault(o => o.Accounts.First().ID == receiverAccountID)
-                ?.Accounts.First(o => o.ID == receiverAccountID);
-
+            IAccount receiver = BankServices.FindAccount(receiverAccountID);
+            
             if (receiver == null)
                 throw new Exception("Could't Find AccountID");
-
+            
             SendMoney(amount, senderAccount, receiver);
         }
-        public void SendMoney(double amount,IAccount senderAccount, IAccount receiver)
+        public void SendMoney(double amount, IAccount senderAccount, IAccount receiver)
         {
             IPerson senderPerson = Persons.FirstOrDefault(o => o.Accounts.Contains(senderAccount));
             senderAccount.Balance -= amount;
             receiver.ReceiveMoney(amount, senderPerson);
-        }
-
-        public IAccount FindAccount(string accountID)
-        {
-            return Persons.FirstOrDefault(o => o.Accounts.First().ID == accountID)?.Accounts.First(o => o.ID == accountID);
         }
 
         public void ReceiveLoanRequest(double amount, IAccount account)

@@ -54,6 +54,7 @@
     <Compile Include="Implementations\Classes\Strategies\Account Strategies\CustomMembershipStrategy.cs" />
     <Compile Include="Implementations\Classes\Strategies\Account Strategies\DiamondMembershipStrategy.cs" />
     <Compile Include="Implementations\Classes\Strategies\Account Strategies\SilverMembershipStrategy.cs" />
+    <Compile Include="Implementations\Services\BankServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
