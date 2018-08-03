@@ -1,6 +1,6 @@
 ﻿using System;
 
-using BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies;
+using BankPCL.Abstractions.Interfaces.Strategies;
 
 namespace BankPCL.Implementations.Classes.Strategies.Membership_Strategies
 {
