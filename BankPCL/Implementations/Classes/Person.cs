@@ -11,6 +11,8 @@ namespace BankPCL.Implementations.Classes
     {
         public string ID { get; set; } = null;
 
+        public bool? IsBlocked { get; set; } = null;
+
         public string FirstName { get; set; } = null;
         public string LastName { get; set; } = null;
 
