@@ -15,6 +15,7 @@ namespace BankPCL.Abstractions.Interfaces
         List<IMembershipStrategy> Memeberships { get; set; }
 
         List<ILoanRequest> LoanRequests { get; set; }
+        List<ILoanRequest> LoanHistory { get; set; }
 
         List<ITransaction> Transactions { get; set; }
 
