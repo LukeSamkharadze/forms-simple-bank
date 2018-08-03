@@ -7,10 +7,10 @@ namespace BankPCL.Abstractions.Interfaces
     {
         IPerson Owner { get; set; }
 
-        bool IsBlocked { get; set; }
-
         string ID { get; set; }
-        
+
+        bool? IsBlocked { get; set; }
+
         double? Balance { get; set; }
         double? Loan { get; set; }
 

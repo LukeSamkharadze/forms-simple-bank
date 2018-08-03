@@ -9,7 +9,9 @@ namespace BankPCL.Implementations.Classes
         public IPerson Owner { get; set; } = null;
 
         public string ID { get; set; } = null;
-        
+
+        public bool? IsBlocked { get; set; } = null;
+
         public double? Balance { get; set; } = null;
         public double? Loan { get; set; } = null;
 
