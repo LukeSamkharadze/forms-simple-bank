@@ -30,6 +30,11 @@ namespace BankPCL.Implementations.Classes
 
         public void RequestLoan(double amount)
         {
+            double maxAmountCanBeRequested = (double)(Owner.MembershipStrategy.MaxLoan * Owner.Rating / Bank.Instance.MaxRating);
+
+            if (amount > maxAmountCanBeRequested)
+                throw new Exception("Could't Request Loan, Because of the Low Rating");
+
             Bank.Instance.ReceiveLoanRequest(amount, this);
         }
         public void ReceiveLoan(double amount, double interest)
