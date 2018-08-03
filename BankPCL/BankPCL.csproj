@@ -45,6 +45,7 @@
     <Compile Include="Abstractions\Interfaces\IBank.cs" />
     <Compile Include="Abstractions\Interfaces\ILoanRequest.cs" />
     <Compile Include="Abstractions\Interfaces\IPerson.cs" />
+    <Compile Include="Abstractions\Interfaces\ITransaction.cs" />
     <Compile Include="Abstractions\Interfaces\Strategies\IMembershipStrategy.cs" />
     <Compile Include="Implementations\Classes\Account.cs" />
     <Compile Include="Implementations\Classes\Bank.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="Implementations\Classes\Strategies\Membership Strategies\CustomMembershipStrategy.cs" />
     <Compile Include="Implementations\Classes\Strategies\Membership Strategies\DiamondMembershipStrategy.cs" />
     <Compile Include="Implementations\Classes\Strategies\Membership Strategies\SilverMembershipStrategy.cs" />
+    <Compile Include="Implementations\Classes\Transaction.cs" />
     <Compile Include="Implementations\Services\BankServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
