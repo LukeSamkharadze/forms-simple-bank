@@ -11,9 +11,9 @@ namespace BankPCL.Abstractions.Interfaces
         double? MaxRating { get; set; }
 
         List<IPerson> Persons { get; set; }
-        List<IPerson> BlockedPersons { get; set; }
 
         List<IMembershipStrategy> Memeberships { get; set; }
+
         List<ILoanRequest> LoanRequests { get; set; }
 
         List<ITransaction> Transactions { get; set; }

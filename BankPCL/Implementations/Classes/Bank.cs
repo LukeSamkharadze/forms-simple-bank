@@ -18,10 +18,11 @@ namespace BankPCL.Implementations.Classes
         public double? MaxLoan { get; set; } = null;
 
         public List<IPerson> Persons { get; set; }
-        public List<IPerson> BlockedPersons { get; set; }
 
         public List<IMembershipStrategy> Memeberships { get; set; }
+
         public List<ILoanRequest> LoanRequests { get; set; }
+        public List<ILoanRequest> LoanHistory { get; set; }
 
         public List<ITransaction> Transactions { get; set; }
 
