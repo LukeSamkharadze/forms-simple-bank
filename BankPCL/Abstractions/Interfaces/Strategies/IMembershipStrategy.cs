@@ -8,6 +8,8 @@ namespace BankPCL.Abstractions.Interfaces.Strategies
 
         double? Interest { get; set; }
 
+        double? MaxLoan { get; set; }
+
         double? UpperLimit { get; set; }
         double? LowerLimit { get; set; }
     }

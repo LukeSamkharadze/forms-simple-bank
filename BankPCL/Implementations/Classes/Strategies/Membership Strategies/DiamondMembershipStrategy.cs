@@ -6,11 +6,13 @@ namespace BankPCL.Implementations.Classes.Strategies.Membership_Strategies
 {
     public class DiamondMembershipStrategy : IMembershipStrategy
     {
-        public double? Priority { get; set; }
+        public double? Priority { get; set; } = null;
 
-        public double? Interest { get; set; }
+        public double? Interest { get; set; } = null;
 
-        public double? UpperLimit { get; set; }
-        public double? LowerLimit { get; set; }
+        public double? MaxLoan { get; set; } = null;
+
+        public double? UpperLimit { get; set; } = null;
+        public double? LowerLimit { get; set; } = null;
     }
 }
