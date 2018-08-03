@@ -71,7 +71,7 @@ namespace BankPCL.Implementations.Classes
 
         public void ReceiveLoanRequest(double amount, IAccount account)
         {
-            int insertIndex = LoanRequests.FindLastIndex(o => o.Account.Owner.MembershipStrategy.Priority <= account.Owner.MembershipStrategy.Priority);
+            int insertIndex = LoanRequests.FindLastIndex(o => o.Account.Owner.MembershipStrategy.Priority >= account.Owner.MembershipStrategy.Priority);
 
             LoanRequests.Insert((insertIndex == -1) ? LoanRequests.Count : insertIndex, new LoanRequest() { Account = account, Amount = amount });
         }
