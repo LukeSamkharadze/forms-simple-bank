@@ -16,6 +16,8 @@ namespace BankPCL.Abstractions.Interfaces
         List<IMembershipStrategy> Memeberships { get; set; }
         List<ILoanRequest> LoanRequests { get; set; }
 
+        List<ITransaction> Transactions { get; set; }
+
         void BlockOrUnblockPerson(string personID, bool blockOrUnblock);
         void BlockOrUnblockPerson(IPerson person, bool blockOrUnblock);
 

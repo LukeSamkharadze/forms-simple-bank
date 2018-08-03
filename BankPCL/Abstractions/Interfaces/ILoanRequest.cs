@@ -7,5 +7,7 @@ namespace BankPCL.Abstractions.Interfaces
         IAccount Account { get; set; }
 
         double? Amount { get; set; }
+
+        bool? IsAccepted { get; set; }
     }
 }

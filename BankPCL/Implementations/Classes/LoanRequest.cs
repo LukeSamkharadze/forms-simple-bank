@@ -9,5 +9,7 @@ namespace BankPCL.Implementations.Classes
         public IAccount Account { get; set; } = null;
 
         public double? Amount { get; set; } = null;
+
+        public double? IsAccepted { get; set; } = null;
     }
 }

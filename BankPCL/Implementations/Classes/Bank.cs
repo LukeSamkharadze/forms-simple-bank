@@ -23,6 +23,8 @@ namespace BankPCL.Implementations.Classes
         public List<IMembershipStrategy> Memeberships { get; set; }
         public List<ILoanRequest> LoanRequests { get; set; }
 
+        public List<ITransaction> Transactions { get; set; }
+
         private Bank() { }
 
         public void BlockOrUnblockPerson(string personID,bool blockOrUnblock)
