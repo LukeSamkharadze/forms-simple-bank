@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies
+namespace BankPCL.Abstractions.Interfaces.Strategies
 {
     public interface IMembershipStrategy
     {

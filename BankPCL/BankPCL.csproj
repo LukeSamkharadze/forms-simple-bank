@@ -40,20 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstractions\Abstract Classes\Strategies\Person Strategies\MembershipStrategy.cs" />
+    <Compile Include="Abstractions\Abstract Classes\Strategies\MembershipStrategy.cs" />
     <Compile Include="Abstractions\Interfaces\IAccount.cs" />
     <Compile Include="Abstractions\Interfaces\IBank.cs" />
     <Compile Include="Abstractions\Interfaces\ILoanRequest.cs" />
     <Compile Include="Abstractions\Interfaces\IPerson.cs" />
-    <Compile Include="Abstractions\Interfaces\Strategies\Account Strategies\IMembershipStrategy.cs" />
+    <Compile Include="Abstractions\Interfaces\Strategies\IMembershipStrategy.cs" />
     <Compile Include="Implementations\Classes\Account.cs" />
     <Compile Include="Implementations\Classes\Bank.cs" />
     <Compile Include="Implementations\Classes\LoanRequest.cs" />
     <Compile Include="Implementations\Classes\Person.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\BronzeMembershipStrategy.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\CustomMembershipStrategy.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\DiamondMembershipStrategy.cs" />
-    <Compile Include="Implementations\Classes\Strategies\Account Strategies\SilverMembershipStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Membership Strategies\BronzeMembershipStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Membership Strategies\CustomMembershipStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Membership Strategies\DiamondMembershipStrategy.cs" />
+    <Compile Include="Implementations\Classes\Strategies\Membership Strategies\SilverMembershipStrategy.cs" />
     <Compile Include="Implementations\Services\BankServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

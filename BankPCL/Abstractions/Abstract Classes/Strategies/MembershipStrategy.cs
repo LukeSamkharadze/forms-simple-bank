@@ -1,8 +1,8 @@
 ﻿using System;
 
-using BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies;
+using BankPCL.Abstractions.Interfaces.Strategies;
 
-namespace BankPCL.Abstractions.Abstract_Classes.Strategies.Person_Strategies
+namespace BankPCL.Abstractions.Abstract_Classes.Strategies
 {
     public abstract class MembershipStrategy : IMembershipStrategy
     {

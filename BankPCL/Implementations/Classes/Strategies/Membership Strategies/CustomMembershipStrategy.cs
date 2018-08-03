@@ -2,9 +2,9 @@
 
 using BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies;
 
-namespace BankPCL.Implementations.Classes.Strategies.Account_Strategies
+namespace BankPCL.Implementations.Classes.Strategies.Membership_Strategies
 {
-    public class SilverMembershipStrategy : IMembershipStrategy
+    public class CustomMembershipStrategy : IMembershipStrategy
     {
         public double? Priority { get; set; }
 

@@ -2,7 +2,7 @@
 
 using System.Collections.Generic;
 
-using BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies;
+using BankPCL.Abstractions.Interfaces.Strategies;
 
 namespace BankPCL.Abstractions.Interfaces
 {
@@ -16,8 +16,11 @@ namespace BankPCL.Abstractions.Interfaces
         List<IMembershipStrategy> Memeberships { get; set; }
         List<ILoanRequest> LoanRequests { get; set; }
 
-        void BlockPerson(string ID);
-        void BlockPerson(IAccount account);
+        void BlockOrUnblockPerson(string personID, bool blockOrUnblock);
+        void BlockOrUnblockPerson(IPerson person, bool blockOrUnblock);
+
+        void BlockOrUnblockAccount(string personID, bool blockOrUnblock);
+        void BlockOrUnblockAccount(IAccount account, bool blockOrUnblock);
 
         void ReceiveSendMoneyRequest(double amount, IAccount senderAccount, string receiverAccountID);
         void SendMoney(double amount, IAccount sender, IAccount receiver);

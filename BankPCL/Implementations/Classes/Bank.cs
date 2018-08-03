@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 using BankPCL.Abstractions.Interfaces;
+using BankPCL.Abstractions.Interfaces.Strategies;
+
 using BankPCL.Implementations.Services;
 
 namespace BankPCL.Implementations.Classes
@@ -15,32 +17,38 @@ namespace BankPCL.Implementations.Classes
         public double? MaxRating { get; set; } = null;
         public double? MaxLoan { get; set; } = null;
 
-        public List<IPerson> Persons { get; set; } = new List<IPerson>();
-        public Queue<ILoanRequest> LoanQueue { get; set; } = new Queue<ILoanRequest>();
+        List<IPerson> Persons { get; set; }
+        List<IPerson> BlockedPersons { get; set; }
+
+        List<IMembershipStrategy> Memeberships { get; set; }
+        List<ILoanRequest> LoanRequests { get; set; }
 
         private Bank() { }
 
-        public void BlockPerson(string personID)
+        public void BlockOrUnblockPerson(string personID,bool blockOrUnblock)
         {
-            IPerson person = BankServices.FindAccount(personID);
+            IPerson person = BankServices.FindPerson(personID);
 
             if (person == null)
                 throw new Exception("Could't Find Person");
 
-            BlockPerson(person);
+            BlockOrUnblockPerson(person, blockOrUnblock);
         }
-        public void BlockPerson(IPerson person)
+        public void BlockOrUnblockPerson(IPerson person, bool blockOrUnblock)
         {
-            person.IsBlocked = true;
+            person.IsBlocked = blockOrUnblock;
         }
 
-        public void BlockAccount(string accountID)
+        public void BlockOrUnblockAccount(string accountID, bool blockOrUnblock)
         {
             IAccount account = BankServices.FindAccount(accountID);
 
-            if()
+            if (account == null)
+                throw new Exception("Could't Find Account");
+
+            BlockOrUnblockAccount(account, blockOrUnblock);
         }
-        public void BlockAccount(IAccount account)
+        public void BlockOrUnblockAccount(IAccount account, bool blockOrUnblock)
         {
             account.IsBlocked = true;
         }

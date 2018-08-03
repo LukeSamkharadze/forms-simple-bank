@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 
 using BankPCL.Abstractions.Interfaces;
-using BankPCL.Abstractions.Interfaces.Strategies.Person_Strategies;
+using BankPCL.Abstractions.Interfaces.Strategies;
 
 namespace BankPCL.Implementations.Classes
 {
