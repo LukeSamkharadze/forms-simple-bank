@@ -478,7 +478,7 @@
             // numericUpDown7
             // 
             this.numericUpDown7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.numericUpDown7.Location = new System.Drawing.Point(406, 259);
+            this.numericUpDown7.Location = new System.Drawing.Point(415, 255);
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(100, 30);
             this.numericUpDown7.TabIndex = 57;
@@ -486,7 +486,7 @@
             // numericUpDown9
             // 
             this.numericUpDown9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.numericUpDown9.Location = new System.Drawing.Point(406, 315);
+            this.numericUpDown9.Location = new System.Drawing.Point(415, 311);
             this.numericUpDown9.Name = "numericUpDown9";
             this.numericUpDown9.Size = new System.Drawing.Size(100, 30);
             this.numericUpDown9.TabIndex = 58;
@@ -494,7 +494,7 @@
             // numericUpDown10
             // 
             this.numericUpDown10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.numericUpDown10.Location = new System.Drawing.Point(512, 259);
+            this.numericUpDown10.Location = new System.Drawing.Point(521, 255);
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(100, 30);
             this.numericUpDown10.TabIndex = 59;
@@ -503,7 +503,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
-            this.label17.Location = new System.Drawing.Point(402, 236);
+            this.label17.Location = new System.Drawing.Point(411, 232);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(65, 20);
             this.label17.TabIndex = 60;
@@ -513,7 +513,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
-            this.label18.Location = new System.Drawing.Point(508, 237);
+            this.label18.Location = new System.Drawing.Point(517, 233);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(96, 20);
             this.label18.TabIndex = 61;
@@ -523,7 +523,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
-            this.label19.Location = new System.Drawing.Point(508, 293);
+            this.label19.Location = new System.Drawing.Point(517, 289);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(97, 20);
             this.label19.TabIndex = 62;
@@ -532,7 +532,7 @@
             // numericUpDown11
             // 
             this.numericUpDown11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.numericUpDown11.Location = new System.Drawing.Point(512, 315);
+            this.numericUpDown11.Location = new System.Drawing.Point(521, 311);
             this.numericUpDown11.Name = "numericUpDown11";
             this.numericUpDown11.Size = new System.Drawing.Size(100, 30);
             this.numericUpDown11.TabIndex = 63;
@@ -541,7 +541,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
-            this.label20.Location = new System.Drawing.Point(405, 292);
+            this.label20.Location = new System.Drawing.Point(414, 288);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(62, 20);
             this.label20.TabIndex = 64;
@@ -550,7 +550,7 @@
             // button16
             // 
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.button16.Location = new System.Drawing.Point(618, 260);
+            this.button16.Location = new System.Drawing.Point(627, 256);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(125, 30);
             this.button16.TabIndex = 65;
@@ -609,7 +609,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label13.Location = new System.Drawing.Point(401, 210);
+            this.label13.Location = new System.Drawing.Point(410, 206);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(190, 25);
             this.label13.TabIndex = 72;
